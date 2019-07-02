@@ -1,0 +1,505 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    cursor: pointer;
+    outline: none;
+}
+input{
+    outline: none;
+}
+
+
+/* MAIN */
+
+#main{
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* DESKTOP */
+
+#desktop-background{
+    background: url(images/wallpapers/103654.jpg);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+}
+
+#desktop{
+    width: 100%;
+}
+
+#icons-main{
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 5px;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* display: grid;
+    align-content: center;
+    justify-items: center;
+    grid-template-rows: repeat(auto-fit, minmax(75px, 1fr)); */
+}
+
+.home-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80px;
+    margin: 7px 0px;
+    transform: 300ms;
+}
+#icons-main p{
+    font-size: 0.7em;
+    color: #e9edde;
+    margin-top: 4px;
+    /* margin-bottom: 20px; */
+    text-align: center;
+    cursor: default;
+}
+.home-icons:hover{
+    /* border: 1px solid #e9edde;
+    border-radius: 3px; */
+    outline: 1px solid white;
+    outline-style: groove;
+    transition: 300ms;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* START MENU */
+
+
+#programs{
+    /* width: 280px; */
+    height: 480px;
+    padding: 10px;
+    /* background-color: cornflowerblue; */
+    background: rgba(14, 14, 14, 0.8);
+    position: absolute;
+    bottom: 40px;
+    display: none;
+}
+
+#programs-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#profile img{
+    width: 26px;
+    border-radius: 50%;
+}
+#profile span{
+    font-size: 0.6em;
+    color: #e9edde;
+    margin-left: 5px;
+}
+
+#close-start{
+    background: none;
+    border: none;
+}
+
+#programs-list{
+    display: flex;
+}
+
+#programs-inner-1{
+    width: 240px;
+}
+
+#programs-inner-1>p{
+    /* display: block; */
+    margin: 10px 0px;
+    padding: 7px 2px;
+    color: #cbcbcb;
+    font-size: 0.8em;
+    /* text-decoration: none; */
+    cursor: pointer;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    transition: 300ms;
+}
+#programs-inner-1>p img{
+    width: 16px;
+    margin-right: 15px;
+}
+#programs-inner-1 p:hover{
+    background: rgba(0, 0, 0, 0.6);
+    transition: 300ms;
+    color: #e9edde;
+}
+#programs-inner-1 span{
+    margin-top: 20px;
+    color: #959595;
+    font-size: 0.7em;
+}
+.most-used{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    cursor: pointer;
+    color: #e9edde;
+    font-size: 0.8em;
+    color: #e9edde;
+    margin: -4px 0px;
+    padding: 5px 2px;
+    transition: 300ms;
+}
+.most-used img{
+    margin-right: 15px;
+}
+
+#programs-inner-2{
+    width: 425px;
+    padding: 0px 5px;
+}
+#friv{
+    width: 208px;
+    background-color: #9500f0;
+}
+#friv img{
+    width: 90px;
+}
+.programs-inner-2-divs{
+    display: flex;
+}
+.programs-inner-2-divs>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 102px;
+    height: 102px;
+    margin: 2px;
+    cursor: pointer;
+    transition: 1s;
+}
+.programs-inner-2-divs>div:hover{
+    transform: rotatex(180deg);
+    transition: 1s;
+}
+.programs-inner-2-divs>div:nth-child(2):hover{
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+
+#xbox{
+    background-color: #107c0f;
+}
+#store{
+    background-color: #464646;
+}
+#skype{
+    background-color: #00aff0;
+}
+#microsoft{
+    background-color: #d24726;
+}
+#email, #calender{
+    background-color: #0072c5;
+}
+#maps{
+    background-color: #0089d1;
+}
+#one-note{
+    background-color: #80397b;
+}
+#photos{
+    background-color: #008298;
+    width: 208px;
+}
+#weather{
+    background-color: #0063b1;
+}
+#news{
+    background-color: #d03438;
+    width: 208px;
+}
+#sports{
+    background-color: #494099;
+}
+
+
+#programs-inner-3{
+    width: 425px;
+    padding: 0px 5px;
+}
+#programs-inner-3 span{
+    color: #c9c7c8;
+    font-size: 0.9em;
+}
+#programs-inner-3-divs-1{
+    display: flex;
+    margin: 10px 0px;
+}
+#programs-inner-3-divs-1>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 102px;
+    height: 102px;
+    margin: 2px;
+    cursor: pointer;
+    transition: 1s;
+}
+#programs-inner-3-divs-1>div:hover{
+    transform: rotatex(180deg);
+    transition: 1s;
+}
+#programs-inner-3-divs-1>div:nth-child(1):hover{
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+
+#programs-inner-3-divs-1 div:nth-child(1){
+    width: 208px;
+}
+#programs-inner-3-divs-1 div{
+    background-color: #0078d7;
+}
+
+#programs-inner-3-divs-2{
+    display: flex;
+}
+#programs-inner-3-divs-2>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 208px;
+    height: 102px;
+    margin: 2px;
+    cursor: pointer;
+    transition: 1s;
+}
+#programs-inner-3-divs-2>div:hover{
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+#music{
+    background-color: #d24726;
+}
+#video{
+    background-color: #ad193d;
+}
+
+#programs-inner-3-divs-3{
+    display: flex;
+}
+#programs-inner-3-divs-3>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 208px;
+    height: 190px;
+    margin: 2px;
+    cursor: pointer;
+    transition: 1s;
+}
+#programs-inner-3-divs-3>div:nth-child(1):hover{
+    transform: rotatex(180deg);
+    transition: 1s;
+}
+#money{
+    height: 208px;
+    background-color: #10883e;
+}
+#food, #food img{
+    width: 208px;
+    height: 102px;
+}
+#health{
+    width: 208px;
+    height: 95px;
+    background-color: #d24726;
+}
+#food-health{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#food-health div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+#food-health div:nth-child(1){
+    margin-bottom: 5px;
+}
+#food-health div:hover{
+    transform: rotatex(180deg);
+    transition: 1s;
+}
+
+/* TASKBAR */
+
+#taskbar{
+    width: 100%;
+    height: 40px;
+    background: rgba(16, 16, 16, 0.8);
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#taskbar-left{
+    display: flex;
+}
+#windows-start{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: rgba(57, 55, 56, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+}
+#windows-start:hover{
+    background-color: #101010;
+    transition: 300ms;
+}
+
+#taskbar-left input{
+    width: 250px;
+    padding: 0px 10px;
+    background: rgba(57, 55, 56, 0.9);
+    border: none;
+    color: #e9edde;
+}
+#microphone{
+    width: 40px;
+    background: rgba(3, 90, 159, 0.8);
+    border: none;
+}
+#microphone:hover{
+    background: rgba(0, 109, 196, 0.8);
+}
+
+.bottom-buttons img{
+    width: 22px;
+}
+.bottom-buttons{
+    width: 40px;
+    background: rgba(16, 16, 16, 0.8);
+    border: none;    
+    transition: 300ms;
+}
+.bottom-buttons:hover{
+    background: rgba(57, 55, 56, 0.8);
+    transition: 300ms;
+}
+
+
+#taskbar-right{
+    width: 187px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-right-buttons{
+    width: 23px;
+    background: none;
+    border: none;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+}
+#taskbar-right button:hover{
+    background: rgba(57, 55, 56, 0.8);
+    transition: 300ms;
+}
+
+#time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 7px;
+    height: 40px;
+    transition: 300ms;
+    cursor: default;
+}
+#time:hover{
+    background: rgba(57, 55, 56, 0.8);
+    transition: 300ms;
+}
+#time span{
+    color: #e9edde;
+    font-size: 0.7em;
+}
+#go-to-home-btn{
+    width: 2px;
+    height: 40px;
+    border: none;
+    border-left: 1px solid #777777;
+    background: none;
+}
+
+
+
+
+@media only screen and (min-width:100px) and (max-width:620px){
+
+    /* .bottom-buttons{
+        display: none;
+    } */
+    #massage-btn{
+        display: none;
+    }
+    .bottom-right-buttons{
+        width: 17px;
+    }
+    #taskbar-left input{
+        width: 100px;
+        padding: 0px 10px;
+    }
+
+}
+ 
+@media only screen and (min-width:100px) and (max-width:1140px){
+    #programs-inner-3{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width:100px) and (max-width:700px){
+    #programs-inner-2{
+        display: none;
+    }
+}
+@media only screen and (min-width:100px) and (max-width:430px){
+    .bottom-buttons{
+        width: 30px;
+    }
+    #taskbar-left input{
+        width: 75px;
+        padding: 0px 5px;
+    }
+}
+@media only screen and (min-width:100px) and (max-width:370px){
+    #taskbar-left input{
+        display: none;
+    }    
+}

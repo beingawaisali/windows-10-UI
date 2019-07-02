@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Windows 10 UX</title>
+</head>
+
+<body>
+
+    <section id="main">
+        <div id="desktop-background">
+            <div id="desktop">
+                <div id="icons-main">
+                    <div class="home-icons">
+                        <img src="images/desktop-icons/user.png" alt="user">
+                        <p>User</p>
+                    </div>
+                    <div class="home-icons">
+                        <img src="images/desktop-icons/my-pc.png" alt="my pc">
+                        <p>This PC</p>
+
+                    </div>
+                    <div class="home-icons">
+                        <img src="images/desktop-icons/my-network.png" alt="network">
+                        <p>Network</p>
+
+                    </div>
+                    <div class="home-icons">
+                        <img src="images/desktop-icons/recyclebin.png" alt="recyclebin">
+                        <p>Recycle Bin</p>
+                    </div>
+                    <div class="home-icons">
+                        <img src="images/desktop-icons/control-panel.png" alt="control panel">
+                        <p>Control Panel</p>
+                    </div>
+                </div>
+            </div>
+            <div id="programs">
+                <header id="programs-header">
+                    <div id="profile">
+                        <img src="images/user/profile-1.jpeg" alt="profile" id="profile">
+                        <span>Awais Ali</span>
+                    </div>
+                    <button onclick="hideProgram()" id="close-start">
+                        <img src="images/other-icons/close-start.png" alt="close">
+                    </button>
+                </header>
+                <div id="programs-list">
+                    <div id="programs-inner-1">
+                        <p>File Explorer</p>
+                        <p>Documents</p>
+                        <p>Settings</p>
+                        <div id="most-used">
+                            <span>Most Used</span>
+                            <p class="most-used">
+                                <img src="images/desktop-icons/settings.jpg"> Settings
+                            </p>
+                            <p class="most-used">
+                                <img src="images/desktop-icons/snipping-tool.jpg"> Snipping Tools
+                            </p>
+                            <p class="most-used">
+                                <img src="images/desktop-icons/paint.jpg"> Paint
+                            </p>
+                            <p class="most-used">
+                                <img src="images/desktop-icons/sticky-notes.jpg"> Sticky Notes
+                            </p>
+                            <p class="most-used">
+                                <img src="images/desktop-icons/notepad.jpg"> Notepad
+                            </p>
+                            <p class="most-used">
+                                <img src="images/desktop-icons/xps-viewer.jpg"> XPS Viewer
+                            </p>
+                        </div>
+                        <p>
+                            <img src="images/other-icons/power.png" alt="power">Power
+                        </p>
+                        <p>
+                            <img src="images/other-icons/all-apps.png" alt="all apps">All Apps
+                        </p>
+                    </div>
+                    <div id="programs-inner-2">
+                        <div class="programs-inner-2-divs">
+                            <div id="friv">
+                                <img src="images/other-icons/friv.png" alt="friv">
+                            </div>
+                            <div id="xbox">
+                                <img src="images/other-icons/xbox.png" alt="xbox">
+                            </div>
+                            <div id="store">
+                                <img src="images/other-icons/apps-store.png" alt="store">
+                            </div>
+                        </div>
+                        <div class="programs-inner-2-divs">
+                            <div id="skype">
+                                <img src="images/other-icons/skype.png" alt="skype">
+                            </div>
+                            <div id="microsoft">
+                            </div>
+                            <div id="email">
+                                <img src="images/other-icons/email.png" alt="mail">
+                            </div>
+                            <div id="calender">
+                                <img src="images/other-icons/calender.png" alt="calender">
+                            </div>
+                        </div>
+                        <div class="programs-inner-2-divs">
+                            <div id="maps">
+                                <img src="images/other-icons/maps.png" alt="maps">
+                            </div>
+                            <div id="one-note">
+                                <img src="images/other-icons/one-note.png" alt="one-note">
+                            </div>
+                            <div id="photos">
+                                <img src="images/other-icons/photos.png" alt="photos">
+                            </div>
+                        </div>
+                        <div class="programs-inner-2-divs">
+                            <div id="weather">
+                                <img src="images/other-icons/weather.png" alt="weather">
+                            </div>
+                            <div id="news">
+                                <img src="images/other-icons/news.png" alt="news">
+                            </div>
+                            <div id="sports">
+                                <img src="images/other-icons/sports.png" alt="sports">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="programs-inner-3">
+                        <span>Explore Windows</span>
+                        <div id="programs-inner-3-divs-1">
+                            <div id="bulb">
+                                <img src="images/other-icons/bulb-icon.png" alt="bulb">
+                            </div>
+                            <div id="insider-hub">
+                                <img src="images/other-icons/insider-hub.png" alt="insider-hub">
+                            </div>
+                            <div id="windows-feedback">
+                                <img src="images/other-icons/windows-feedback.png" alt="windows feedback">
+                            </div>
+                        </div>
+                        <span>Everyday Apps</span>
+                        <div id="programs-inner-3-divs-2">
+                                <div id="music">
+                                    <img src="images/other-icons/music.png" alt="music">
+                                </div>
+                                <div id="video">
+                                    <img src="images/other-icons/video-player.png" alt="video">
+                                </div>
+                        </div>
+                        <div id="programs-inner-3-divs-3">
+                            <div id="money">
+                                <img src="images/other-icons/money.png" alt="money">
+                            </div>
+                            <div id="food-health">
+                                <div id="food">
+                                    <img src="images/other-icons/food.jpg" alt="food">
+                                </div>
+                                <div id="health">
+                                    <img src="images/other-icons/health-and-fitness.png" alt="health and fitness">
+                                </div>
+                            </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="taskbar">
+            <div id="taskbar-left">
+                <button id="windows-start" onclick="showMenu()">
+                    <img src="images/other-icons/windows.png" alt="windows">
+                </button>
+                <input type="text" placeholder="Ask me anything" id="search-input">
+                <button id="microphone">
+                    <img src="images/other-icons/microphone.png" alt="microphone">
+                </button>
+                <button class="bottom-buttons">
+                    <img src="images/other-icons/bottom-folder.png" alt="file explorer">
+                </button>
+                <button class="bottom-buttons">
+                    <img src="images/other-icons//chrome.png" alt="chrome">
+                </button>
+            </div>
+            <div id="taskbar-right">
+                <button class="bottom-right-buttons">
+                    <img src="images/other-icons/show-hidden-icons.png" alt="show icons">
+                </button>
+                <button class="bottom-right-buttons">
+                    <img src="images/other-icons/battery.png" alt="battery">
+                </button>
+                <button class="bottom-right-buttons">
+                    <img src="images/other-icons/wifi.png" alt="wifi">
+                </button>
+                <button class="bottom-right-buttons">
+                    <img src="images/other-icons/sound.png" alt="sound">
+                </button>
+                <button class="bottom-right-buttons"  id="massage-btn">
+                    <img src="images/other-icons/massage.png" alt="massage">
+                </button>
+                <div id="time">
+                    <span>10:00 PM</span>
+                    <span>6/24/3019</span>
+                </div>
+                <button id="go-to-home-btn"></button>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
